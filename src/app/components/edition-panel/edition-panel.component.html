@@ -1,0 +1,41 @@
+<div class="menu-container" *ngIf="globals.editFeaturesSelected">
+  <label>Select the feature type</label>
+  <form [formGroup]="featureTypeForm" (ngSubmit)="onSubmit()">
+    <div style="height: 30%">
+    <input id="point" type="radio"  value="Point" name="feature" formControlName="feature" style="height: 10px" (click)="displaySecondForm()">
+    <label  for="point">point</label>
+    </div>
+    <div style="height: 30%">
+    <input id="line" type="radio"  value="Line" name="feature" formControlName="feature" style="height: 10px" (click)="displaySecondForm()">
+    <label  for="line">line</label>
+    </div>
+    <div style="height: 30%" >
+      <input id="polygon" type="radio"  value="Polygon" name="feature" formControlName="feature" style="height: 10px" (click)="displaySecondForm()">
+      <label  for="polygon">polygon</label>
+  </div>
+  </form>
+</div>
+
+<div *ngIf="featureTypeSelected " class="menu-container">
+  <label>Select type of entity</label>
+    <form [formGroup]="facilityForm" (ngSubmit)="onSubmit()">
+      <div style="height: 30%">
+      <input id="point" type="radio"  value="Transport" name="feature" formControlName="feature" style="height: 10px" (click)="setFacilityType()">
+        <label  for="point">Transport</label>
+      </div>
+      <div style="height: 30%">
+        <input id="line" type="radio"  value="Leisure" name="feature" formControlName="feature" style="height: 10px" (click)="setFacilityType()">
+        <label  for="line">Leisure</label>
+      </div>
+      <div style="height: 30%">
+        <input id="polygon" type="radio"  value="Health" name="feature" formControlName="feature" style="height: 10px" (click)="setFacilityType()">
+        <label  for="polygon">Health</label>
+      </div>
+  </form>
+</div>
+
+
+
+<div class="remove-button" *ngIf="selectedFeatures.length>0" (click)="removePoints()">
+  <a class="btn btn-danger">Remove Point(s)</a>
+</div>

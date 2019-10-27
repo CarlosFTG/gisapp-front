@@ -1,0 +1,63 @@
+div{
+    height: 300px;
+    width: 100%;
+}
+
+.menu-container{
+   background-color:#F8F8FF;
+   border-radius: 10px;
+   width: 25%;
+   height: 180px;
+   border-right-color: black;
+   padding: 15px;
+   float: left;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   
+}
+.menu-container-within{
+    background-color:#F8F8FF;
+    border-radius: 10px;
+    width: 40px;
+    height: 180px;
+    border-right-color: black;
+    padding: 15px;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+ }
+
+.main-container{
+    padding: 10px;
+    background-color: #DCDCDC;
+    float: left;
+    height: 100%;
+}
+
+.form-container{
+   border-radius: 25px;
+   width: 15%;
+   height: 30px;
+   border-right-color: black;
+   padding: 15px;
+   float: left;
+}
+
+.map{
+    float: right
+}
+
+.rigth{
+    float: left
+}
+
+.nav-buttons{
+    padding: 5px;
+    background-color: #1E90FF;
+    border-radius: 10px;
+}
+
+.remove-button{
+    float: rigth;
+    height: 20px;
+}
+

@@ -1,0 +1,6 @@
+<a *ngIf="selectedFeatures.length>0">Selected Features:</a>
+<ul>
+  <li *ngFor="let feature of selectedFeatures">
+    {{ feature.id }}
+  </li>
+</ul>

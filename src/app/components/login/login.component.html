@@ -1,0 +1,21 @@
+
+<div id="welcome_background">
+  <div class="col-lg-20" id="login" id="LoginForm">
+    <div class="main-div">
+      <div class="panel">
+        <div class="form-group">
+          <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+            <h3 >Login</h3>
+            <label>Email</label>
+            <input class="form-control col-lg-15" type="text" #email="ngModel" name="email" [(ngModel)]="user.email" required>
+            <label >Password</label>
+            <input  class="form-control col-lg-15" type="password"  #password="ngModel" name="password" [(ngModel)]="user.password" required>
+            <input class="btn btn-primary" type="submit" value="login" >
+          </form>
+          <h4>If you don't have an account yet, go to <a id="login"(click)="redirectToRegister()">register</a></h4>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+  

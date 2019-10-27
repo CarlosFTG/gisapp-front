@@ -1,0 +1,27 @@
+
+<div id="welcome_background">
+  <div class="col-lg-20" id="login" id="LoginForm">
+    <div class="main-div">
+      <div class="panel">
+        <div class="form-group">
+  <form #registerForm="ngForm" (ngSubmit)="register()">
+      <h3 >Register</h3>
+    <label>Name</label>
+    <input class="form-control col-lg-7" type="text" #name="ngModel" name="name" [(ngModel)]="user.name" required>
+    <label>Surname</label>
+    <input class="form-control col-lg-7" type="text" #surname="ngModel" name="surname" [(ngModel)]="user.surname" required>
+    <label>Username</label>
+    <input class="form-control col-lg-7" type="text" #userName="ngModel" name="userName" [(ngModel)]="user.userName" required>
+    <label>Email</label>
+    <input class="form-control col-lg-7" type="text" #email="ngModel" name="email" [(ngModel)]="user.email" required>
+    <label >Password</label>
+    <input  class="form-control col-lg-7" type="password"  #password="ngModel" name="password" [(ngModel)]="user.userPassword" required>
+    <input  class="btn btn-primary" type="submit" value="register">
+  </form>
+  <h4>Have you got your account?, Let´s go to <a id="register" (click)="redirectToLogin()">login</a></h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+

@@ -1,0 +1,10 @@
+<div class="menu-container" *ngIf="globals.geotoolsSelected">
+  <form #loginForm="ngForm" (ngSubmit)="generateBuffer()" >
+      <label>Radio:</label>
+      <!-- <input   type="text" #info="ngModel" name="radio" [(ngModel)]="buffer.radio" style="width: 100px" required>  -->
+      <input class="btn btn-primary" type="submit" value="buffer" >
+    </form>
+  <div>
+    <a class="btn btn-info" (click)="findPointsIntoPolygon()">Get points within the buffer(s)</a>  </div>
+</div>
+

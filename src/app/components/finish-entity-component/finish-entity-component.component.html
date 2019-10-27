@@ -1,0 +1,9 @@
+  <div class="form-container" >
+    <form #loginForm="ngForm" (ngSubmit)="finishEntity()" >
+      <label>Feature Name:</label>
+      <input   type="text" #info="ngModel" name="info" [(ngModel)]="mapInfoInput.info" style="width: 100px" required> 
+    </form>
+  <div style="height: 90%">
+    <a class="btn btn-primary" (click)="finishEntity()">Finish entity</a>
+  </div>
+  </div>
