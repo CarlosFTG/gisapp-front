@@ -24,7 +24,9 @@
             ],
             "styles": [
               "src/styles.css","src/assets/leaflet/leaflet.css",
-			  "node_modules/bootstrap/dist/css/bootstrap.css"
+			  "node_modules/bootstrap/dist/css/bootstrap.css",
+			  "C:/spring-boot-backend-apirest-CRUD/front/EV00005/gisapp-front/node_modules/leaflet-draw/dist/leaflet.draw.css"
+			  
             ],
             "scripts": [ "src/assets/leaflet/leaflet.js"]
           },

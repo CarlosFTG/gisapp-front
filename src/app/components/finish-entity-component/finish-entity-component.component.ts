@@ -31,7 +31,6 @@ export class FinishEntityComponentComponent implements OnInit {
 
   geomFinished=this.globals.geomFinished;
   
-
   public pointsFound=[];
 
   facilityForm = this.fb.group({
@@ -41,11 +40,15 @@ export class FinishEntityComponentComponent implements OnInit {
   ngOnInit() {
   }
 
+  facilitySelector(value){
+    this.mapInfoInput.facility=value;
+  }
+
   finishEntity(){
     
     this.globals.featureGeoJson={
       "pointName":this.mapInfoInput.info,
-      "facility":this.globals.facilityType,
+      "facility":this.mapInfoInput.facility,
       "geom":this.globals.geom,
       "userEmail":sessionStorage.getItem("userEmail"),
       "userId":sessionStorage.getItem("userId")

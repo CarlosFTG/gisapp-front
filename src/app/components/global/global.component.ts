@@ -18,7 +18,6 @@ var selectedPolygons=[];
 export class GlobalComponent implements OnInit {
 
   geotoolsSelected: boolean = false;
-  editFeaturesSelected: boolean=false;
   featureType:String;
   facilityType:String;
   geom: String;

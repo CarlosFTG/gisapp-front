@@ -3,6 +3,15 @@
       <label>Feature Name:</label>
       <input   type="text" #info="ngModel" name="info" [(ngModel)]="mapInfoInput.info" style="width: 100px" required> 
     </form>
+    <div class="col text-left">
+        <div ngbDropdown placement="top-right" class="d-inline-block">
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+              <button type="submit" class="parcel-btn weight-option" (click)="facilitySelector('Transport')">Transport</button>
+            <button type="submit" class="parcel-btn weight-option" (click)="facilitySelector('Leisure')">Leisure</button>
+            <button type="submit" class="parcel-btn weight-option" (click)="facilitySelector('Health')">Health</button>
+          </div>
+        </div>
+      </div>
   <div style="height: 90%">
     <a class="btn btn-primary" (click)="finishEntity()">Finish entity</a>
   </div>

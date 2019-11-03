@@ -14,7 +14,6 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { ContainerComponent } from './components/container/container.component';
 import { ToolsBarComponent } from './components/tools-bar/tools-bar.component';
 import { GeoToolsPanelComponent } from './components/geo-tools-panel/geo-tools-panel.component';
-import { EditionPanelComponent } from './components/edition-panel/edition-panel.component';
 
 import { GlobalComponent } from './components/global/global.component';
 import { Mapv2Component } from './components/mapv2/mapv2.component';
@@ -22,6 +21,7 @@ import { ShowSelectedFeaturesComponent } from './components/show-selected-featur
 import { FinishEntityComponentComponent } from './components/finish-entity-component/finish-entity-component.component';
 import { ShowFoundPointsComponentComponent } from './components/show-found-points-component/show-found-points-component.component';
 import { ShowMessageComponentComponent } from './components/show-message-component/show-message-component.component';
+import { FeatureselectorComponentComponent } from './components/featureselector-component/featureselector-component.component';
 
 
 @NgModule({
@@ -33,22 +33,23 @@ import { ShowMessageComponentComponent } from './components/show-message-compone
     ContainerComponent,
     ToolsBarComponent,
     GeoToolsPanelComponent,
-    EditionPanelComponent,
     GlobalComponent,
     Mapv2Component,
     ShowSelectedFeaturesComponent,
     FinishEntityComponentComponent,
     ShowFoundPointsComponentComponent,
-    ShowMessageComponentComponent
+    ShowMessageComponentComponent,
+    FeatureselectorComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
-  providers: [GlobalComponent, Mapv2Component],
+  providers: [GlobalComponent, Mapv2Component,FeatureselectorComponentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

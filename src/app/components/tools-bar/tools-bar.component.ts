@@ -18,11 +18,6 @@ export class ToolsBarComponent implements OnInit {
 
   private displayGeoTools() {
     this.globals.geotoolsSelected=true;
-    this.globals.editFeaturesSelected=false;
-  }
-  private displayEditFeatures() {
-    this.globals.editFeaturesSelected=true;
-    this.globals.geotoolsSelected=false;
   }
 
   private goToUserPanel(){
